@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "silver",
+	"version": "${version}",
+	"name": "Silver",
+	"description": "This is a mod about silver.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/silver/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.silver.Silver"
+		],
+		"client": [
+			"name.silver.SilverClient"
+		],
+		"fabric-datagen": [
+			"name.silver.SilverDataGenerator"
+		]
+	},
+	"mixins": [
+		"silver.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
